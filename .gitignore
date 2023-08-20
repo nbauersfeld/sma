@@ -6,7 +6,6 @@ __pycache__/
 data/
 raw/
 archive/
-eval/
 
 # C extensions
 *.so
