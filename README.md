@@ -54,3 +54,4 @@ notes
 - html prints of the jupyther notebooks are given in the html folder
 - raw sample data ist given in the raw folder
 - evaluation, training and test data is given in the data folder
+- python implementation of ZMeans and Utilities are given in the _ZMeans.py script
