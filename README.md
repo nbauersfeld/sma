@@ -48,3 +48,9 @@ merges the samples from different data stores into a data container to evaluate
 04.evaluate
 contains first evaluation results of two NO2 projects and a training for a OLS model with test
 conclusions are given at the end of this file
+
+notes
+
+- html prints of the jupyther notebooks are given in the html folder
+- raw sample data ist given in the raw folder
+- evaluation, training and test data is given in the data folder
