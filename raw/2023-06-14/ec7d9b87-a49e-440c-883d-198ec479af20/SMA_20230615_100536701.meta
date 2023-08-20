@@ -1,0 +1,187 @@
+[appversion]
+build=13
+version=1.12
+[metafile]
+id=5a238ce6-24f8-4a64-9727-309310d8d0da
+[image]
+name=SMA_20230615_100536701.jpg
+mime=image/jpeg
+width=1600
+height=1200
+stamp=2023-06-15 10:05:36
+filesize=52502
+[camera]
+iso=100
+exposurevalue=0
+exposuretime=495975
+lensfocusdistance=3.043478
+aperture=2.0
+colordepth=24
+colorspace=sRGB
+whitebalance=RggbChannelVector{R:1.000000, G_even:0.559180, G_odd:0.559180, B:1.238282}
+flash=Fired
+controlafstate=Inactive
+controlawbstate=Inactive
+sensorneutralcolorpoint=9/161/129/64
+colorcorrectiontransform=ColorSpaceTransform([218/128, -89/128, -1/128], [-17/128, 143/128, 2/128], [16/128, -75/128, 187/128])
+controlaestate=Inactive
+controlaeregions=(x:0, y:0, w:0, h:0, wt:0)
+controlaetargetfpsrange=[10, 30]
+controlafmode=0
+controlafregions=(x:0, y:0, w:0, h:0, wt:0)
+controlawbregions=
+controlpostrawsensitivityboost=
+distortioncorrectionmode=
+edgemode=1
+lensfocusrange=Pair{3.314586 2.77237}
+noisereductionmode=1
+reprocesseffectiveexposurefactor=
+sensordynamicblacklevel=
+sensordynamicwhitelevel=
+sensorframeduration=33322660
+sensorsensitivity=100
+shadingmode=1
+statisticslensshadingcorrectionmap=
+statisticssceneflicker=2
+blacklevellock=false
+colorcorrectionaberrationmode=0
+colorcorrectiongains=
+colorcorrectionmode=0
+controlaeantibandingmode=3
+controlaeexposurecompensation=
+controlaelock=false
+controlaemode=0
+controlaeprecapturetrigger=0
+controlafscenechange=
+controlawblock=false
+controlawbmode=0
+controlcaptureintent=1
+controleffectmode=0
+controlenablezsl=
+controlmode=1
+controlscenemode=0
+controlvideostabilizationmode=0
+flashmode=2
+hotpixelmode=1
+jpeggpslocation=
+jpegorientation=
+jpegquality=100
+jpegthumbnailquality=
+jpegthumbnailsize=
+lensaperture=
+lensdistortion=
+lensfilterdensity=0.0
+lensfocallength=4.04
+lensintrinsiccalibration=
+lensopticalstabilizationmode=0
+lensposerotation=
+lensposetranslation=
+lensradialdistortion=
+lensstate=0
+requestpipelinedepth=4
+scalercropregion=Rect(0, 0 - 4656, 3496)
+sensorexposuretime=
+sensorgreensplit=1.0025189
+sensornoiseprofile=Pair{1.9043148E-4 1.61720571E-6};Pair{1.9043148E-4 1.61720571E-6};Pair{1.9043148E-4 1.61720571E-6};Pair{1.9043148E-4 1.61720571E-6}
+sensorrollingshutterskew=33321726
+sensortestpatterndata=
+sensortestpatternmode=
+sensortimestamp=37718916940330
+statisticsfacedetectmode=0
+statisticsfaces=
+statisticshotpixelmap=
+statisticshotpixelmapmode=false
+statisticslensshadingmapmode=0
+statisticsoisdatamode=
+statisticsoissamples=
+tonemapcurve=
+tonemapgamma=
+tonemapmode=
+tonemappresetcurve=
+[coordinates]
+longitude=10.49710673
+latitude=51.92735627
+altitude=284.781921386719
+stamp=2023-06-15 08:04:39
+[location]
+name=
+[device]
+name=BullittGroupLimited S61
+serial=8e816cae1cdb2ab1
+os=Android 9
+[calibration]
+stamp=2023-06-13 13:30:31
+[preparation]
+reagent=
+remark=
+[sample]
+material=
+method=
+remark=
+temperature=
+concentration=
+[series]
+name=Eurawasser Nitrit !
+id=ec7d9b87-a49e-440c-883d-198ec479af20
+seriestimestamp=2023-06-15 10:05:29
+[accelerometer]
+unit=m/s²
+value=9.659149;-0.226532;0.2996368
+[magnetic_field]
+unit=μT
+value=-50.61493;-31.54602;2.003479
+[orientation]
+unit=deg
+value=138.6356;36.50803;87.68637
+[gyroscope]
+unit=rad/s
+value=-0.0004882813;-0.0003509521;0.0002441406
+[light]
+unit=lx
+value=60
+[pressure]
+unit=hPa
+value=1005.73
+[proximity]
+unit=cm
+value=8.000183
+[gravity]
+unit=m/s²
+value=9.798656;-0.2355283;0.3182044
+[linear_acceleration]
+unit=m/s²
+value=-0.0008611679;0.0006179065;-0.002460539
+[rotation_vector]
+unit=unitless
+value=-0.6952236;-0.02098063;-0.7174321;0.03892385;0
+[relative_humidity]
+unit=%
+value=44.89846
+[ambient_temperature]
+unit=°C
+value=25.68254
+[magnetic_field_uncalibrated]
+unit=μT
+value=-19.60602;-152.121;-22.8775;31.00891;-120.575;-24.88098
+[game_rotation_vector]
+unit=unitless
+value=-0.1931788;-0.6681752;-0.1829086;0.6948153
+[gyroscope_uncalibrated]
+unit=rad/s
+value=-0.0006103516;0.002731323;-0.002120972;-0.0001220703;0.003082275;-0.002365112
+[geomagnetic_rotation_vector]
+unit=unitless
+value=-0.6952071;-0.0240306;-0.7171755;0.04205783;0
+[accelerometer_uncalibrated]
+unit=m/s²
+value=9.661255;-0.2316284;0.3113098;0;0;0
+[controls]
+state=idle
+reagent=Nitrit NO2
+operator=pdv
+project=Smart Analytics
+tray=Hach 
+concentration=0.190
+adapter=Adapter_4_Küvette
+device=CAT_HHI
+unknown_number=22
