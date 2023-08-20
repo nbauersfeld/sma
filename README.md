@@ -5,7 +5,7 @@ collects raw data from a project folder, that contains time based images and met
 with a special fiber mount for the analysis of NO2, NH4, PH4 concentrations in a reagence
 
 to get an idea, how sample images are recorded, a schematic image description supports by
- ![](doc/media/aperture.png =300x)
+ ![](doc/media/aperture.png)
 
 1) camera chassis
 2) mount to hold
