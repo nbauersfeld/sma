@@ -51,7 +51,10 @@ conclusions are given at the end of this file
 
 notes
 
-- a first approach description (german) is given by doc/sma_review.pdf
+- a first approach description (german) is given by doc/sma_review.pdf,
+  that shows the data understanding, preparation, modelling and evaluation chain;
+  the coresponding quantity/quality report and a schematic view of sample preparation,
+  sample merge and a (small) conclusion
 - html prints of the jupyther notebooks are given in the html folder
 - raw sample data ist given in the raw folder
 - evaluation, training and test data is given in the data folder
