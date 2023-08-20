@@ -51,6 +51,7 @@ conclusions are given at the end of this file
 
 notes
 
+- a first approach description (german) is given by doc/sma_review.pdf
 - html prints of the jupyther notebooks are given in the html folder
 - raw sample data ist given in the raw folder
 - evaluation, training and test data is given in the data folder
