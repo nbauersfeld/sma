@@ -61,6 +61,9 @@ conclusions are given at the end of this file
 * reagences where selected to identify the target molecules
 * an understanding was evolved, how a reagence indicate a concentration of a target and how could it be possible to evaluate in color space and by sample images
 * labeled test and train data was provided by a local water supplier to build models to identify target molecules within an appropriate model in machine learning
+* different kinds of models (with a comparable machine learning algorithm) where developed
+  * a model to compare and setup data of different target molecules to setup and select the model to predict a concentration of the target
+  * a model to compare and predict data of the same target molecule
 * a mobile app was developed to store images from the fiber channel aperture by the mobile flash light and camera, evaluate them and extract the actual value of concentration of the prefered target molecules by a pre-defined model on site
 * sample image collections where transfered to a cloud store or online folder to post train the models to identify the target molecules
 * interation steps where planed to improve models, app handling and mount construction
@@ -72,6 +75,7 @@ conclusions are given at the end of this file
 * the fiber channel begin and end has to be plane enough to avoid shadowing or even fringing
 * the reagences has to be well prepared in a vessel and easy to handle on site
 * the machine learning model has to be appropriate to the evaluation case in the sample color space, easy to implement for on site analysis and embedded devices, fast to execute to give results, post trainable and transferable
+* a model has to identifiy the target molecule/target working space
 * the mobile app has always be up to date and understandable in its one page design
 * the mobile app has pre-trained models to evaluate the the image samples and detect target molecules in an appropriate way just in time and on site (depends on the reagence behaviour)
 * the mobile app can restore all on site measurements to an online folder; if the mobile is online and in a special network area, data should be transfered over secure channels
