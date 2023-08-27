@@ -1,9 +1,8 @@
 # practical project
 
 author: Norman Bauersfeld, Von-Garßen-Str. 12, 38640 Goslar, u37724
-version: 2023-08-27  
 
-preamble
+**preamble**
 
 main topics to begin with a low budget solution evaluation testing water characteristics
 
@@ -24,6 +23,8 @@ achievements
 - with aim of a project of the development of a simple and inexpensive smartphone-based measurement system for in situ water analysis
 - quantitative proof of relevant parameter realization and validation with a simple means and with a reduced need for chemicals (reagences)
 - use of a common mobile camera and flash light, in combination with a mount (from the 3D printer and with a functionalized polymer film), should enable qualitative and quantitative detection of the target molecules (NO2, PH4 or NH4)
+
+**files**
 
 01.data
 
@@ -54,7 +55,7 @@ merges the samples from different data stores into a data container to evaluate
 contains first evaluation results of two NO2 projects and a training for a OLS model with test
 conclusions are given at the end of this file
 
-conclusion
+**conclusion**
 
 * a first prototype of the mobile mount or chassis was build with a specific fiber channel
 * reagences where selected to identify the target molecules
@@ -65,7 +66,7 @@ conclusion
 * interation steps where planed to improve models, app handling and mount construction
 * field tests where applied to test the first models, mount and mobile app handling
 
-challenges
+**challenges**
 
 * the chassis construction has to be accurate to mount to a mobile of a special type without loss of measurement information
 * the fiber channel begin and end has to be plane enough to avoid shadowing or even fringing
@@ -80,7 +81,7 @@ challenges
   (but can be time consuming and annoying)
 * a common system description of the system should be applied to make it usable
 
-notes
+**notes**
 
 - a first approach description (german) is given by doc/sma_review.pdf,
   that shows the data understanding, preparation, modelling and evaluation chain;
@@ -90,3 +91,5 @@ notes
 - raw sample data ist given in the raw folder
 - evaluation, training and test data is given in the data folder
 - python implementation of ZMeans and Utilities are given in the _ZMeans.py script
+
+version 2023-08-27
