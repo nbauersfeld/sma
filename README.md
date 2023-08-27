@@ -57,6 +57,7 @@ conclusions are given at the end of this file
 
 **conclusion**
 
+* ideas of the framework adapted can be found by different sources of publications, e.g. given by references (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
 * a first prototype of the mobile mount or chassis was build with a specific fiber channel
 * reagences where selected to identify the target molecules
 * an understanding was evolved, how a reagence indicate a concentration of a target and how could it be possible to evaluate in color space and by sample images
@@ -68,14 +69,16 @@ conclusions are given at the end of this file
 * sample image collections where transfered to a cloud store or online folder to post train the models to identify the target molecules
 * interation steps where planed to improve models, app handling and mount construction
 * field tests where applied to test the first models, mount and mobile app handling
+* the on site data samples where fit with OLS models; statistical tests where applied
 
 **challenges**
 
 * the chassis construction has to be accurate to mount to a mobile of a special type without loss of measurement information
 * the fiber channel begin and end has to be plane enough to avoid shadowing or even fringing
 * the reagences has to be well prepared in a vessel and easy to handle on site
-* the machine learning model has to be appropriate to the evaluation case in the sample color space, easy to implement for on site analysis and embedded devices, fast to execute to give results, post trainable and transferable
-* a model has to identifiy the target molecule/target working space
+* the machine learning model (implemented by ZMeans; (Ng, A., 2012) and (Jan et. al., 1988)) has to be appropriate to the evaluation case in the sample color space, easy to implement for on site analysis and embedded devices, fast to execute to give results, post trainable and transferable
+* a 1st model has to identifiy the target working space
+* a 2nd model hast to predict the concentration of the target molecule
 * the mobile app has always be up to date and understandable in its one page design
 * the mobile app has pre-trained models to evaluate the the image samples and detect target molecules in an appropriate way just in time and on site (depends on the reagence behaviour)
 * the mobile app can restore all on site measurements to an online folder; if the mobile is online and in a special network area, data should be transfered over secure channels
@@ -84,6 +87,16 @@ conclusions are given at the end of this file
 * the inclusion of local water suppliers improve the created results and gives an evaluation by experts
   (but can be time consuming and annoying)
 * a common system description of the system should be applied to make it usable
+* the OLS models fits to coefficients with the assumption that the residuals are independent to each other; statistical test do not support this actually by showing assumption violations (Durbin-Watson-Test, (Zach, 2023))
+
+**references**
+
+- Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
+- IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
+- IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
+- Zach (2023, August 27). Durbin-Watson-Test. http://www.stratology.org/durbin-watson-test
+- Ng, A. (2012). Clustering with the k-means algorithm. Machine Learning, 1-2.
+- Jain, A. K., & Dubes, R. C. (1988). Algorithms for clustering data. Prentice-Hall, Inc.
 
 **notes**
 
