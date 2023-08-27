@@ -39,13 +39,13 @@ to get an idea, how sample images are recorded, a schematic image description su
 6) enlighted by cameras flash light and
 7) recorded with cameras foto diode
 
-02.sample
+02.sample  
 samples projects and puts relevant cluster results into project specific data stores
 
-03.merge
+03.merge  
 merges the samples from different data stores into a data container to evaluate
 
-04.evaluate
+04.evaluate  
 contains first evaluation results of two NO2 projects and a training for a OLS model with test
 conclusions are given at the end of this file
 
