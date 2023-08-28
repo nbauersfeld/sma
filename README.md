@@ -30,7 +30,6 @@ achievements
 
 - collects raw data from a project folder, that contains time based images and meta data from a mobile
   with a special fiber mount for the analysis of NO2, NH4, PH4 concentrations in a reagence
-
 - to get an idea, how sample images are recorded, a schematic image description supports by
   ![](doc/media/aperture.png)
 
@@ -106,16 +105,15 @@ achievements
   (but can be time consuming and annoying)
 * a common system description of the system should be applied to make it usable
 * the OLS models fits to coefficients with the assumption that the residuals are independent to each other; statistical test do not support this actually by showing assumption violations (Durbin-Watson-Test, (Zach, 2023))
-*
 
 **references**
 
-- Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
-- IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
-- IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
 - Zach (2023, August 27). Durbin-Watson-Test. http://www.stratology.org/durbin-watson-test
 - Ng, A. (2012). Clustering with the k-means algorithm. Machine Learning, 1-2.
 - Jain, A. K., & Dubes, R. C. (1988). Algorithms for clustering data. Prentice-Hall, Inc.
+- Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
+- IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
+- IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
 
 **notes**
 
