@@ -7441,15 +7441,15 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="sampling">sampling<a class="anchor-link" href="#sampling">¶</a></h3><p>image sampling by stamp and data project folder</p>
-<p>projects are measurements of</p>
+<h3 id="sampling">sampling<a class="anchor-link" href="#sampling">¶</a></h3><p>image sampling by stamp and data project folder<br/>
+projects are measurements of</p>
 <blockquote>
-<p>Nitrit NO2<br/>
-Phosphat PO4<br/>
-Ammonium NH4</p>
+<p>Nitrit NO2, Phosphat PO4, Ammonium NH4</p>
 </blockquote>
+<blockquote>
 <p>for further clustering of the image data color space and metric is given<br/>
-clustering is done by a derived kmeans method by module <i>ZMeans</i></p>
+clustering is done by a derived kmeans method by the adapted module <strong>ZMeans</strong></p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -7571,18 +7571,18 @@ retrieve centers and labels and scores of the partitions</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="build">build<a class="anchor-link" href="#build">¶</a></h3><p>build and plot then partitions given by the clustering</p>
 <p>steps for every item in <code>items</code>:</p>
-<blockquote>
-<p>load item data<br/>
-reshape every sample in cluster space to clustered image views<br/>
-mask the information relevant area  to crop (pixel) data to analyze<br/>
-map a sample to a colormap that counts the data equally for every project<br/>
-zoom the sample image to the relevant mask area<br/>
-extract partitions by k clusters to black and a light-dark vision</p>
-</blockquote>
-<p>an information elevant area are non-black pixels that are connected and content of a light-dark vision<br/>
-color mapping is important to compare different projects in the same color space<br/>
-partitions are sorted from left to right by black, dark, light<br/>
-dark and light are information relevant and depends on the spot properties</p>
+<ul>
+<li>load item data</li>
+<li>reshape every sample in cluster space to clustered image views</li>
+<li>mask the information relevant area  to crop (pixel) data to analyze</li>
+<li>map a sample to a colormap that counts the data equally for every project</li>
+<li>zoom the sample image to the relevant mask area</li>
+<li>extract partitions by k clusters to black and a light-dark vision</li>
+</ul>
+<p>an information elevant area is non-black pixels that are connected and<br/>
+content of a light-dark vision color mapping is important to compare different projects in the same color space</p>
+<p>partitions are sorted from left to right by black, dark, light</p>
+<p>dark and light are information relevant and depends on the spot properties</p>
 <p>clustered image results a illustrated below</p>
 <p>the dataset illustration shows results for the first image of every concentration folder<br/>
 the NO2 sample holds concentrations of 0.04 to 0.151</p>
@@ -7779,9 +7779,12 @@ the NO2 sample holds concentrations of 0.04 to 0.151</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="single-point-of-view">single point of view<a class="anchor-link" href="#single-point-of-view">¶</a></h3><p>plot (single point value of) partitions for every concentration for every channel<br/>
-relevant partitions are non-black; 3 clusters a reduced to 2</p>
-<p>for the NO2 sample it is shown, that the channels L and a of the Lab color space are modified by concentration changes</p>
+<h3 id="single-point-of-view">single point of view<a class="anchor-link" href="#single-point-of-view">¶</a></h3><p>plot (single point value of) partitions for every concentration for every channel</p>
+<ul>
+<li>relevant partitions are non-black</li>
+<li>3 clusters a reduced to 2</li>
+</ul>
+<p>for the NO2 sample it is shown, that the channels <strong>L</strong> and <strong>a</strong> of the <strong>Lab</strong> color space are modified by concentration changes</p>
 </div>
 </div>
 </div>
@@ -7934,6 +7937,17 @@ relevant partitions are non-black; 3 clusters a reduced to 2</p>
 | 27 | Nitrit NO2 |       1 |   0.151 | euclidean | lab     | 0.507472 | 0.578507 | 0.554197 |
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>last (manual) update: 2023-08-28</p>
 </div>
 </div>
 </div>

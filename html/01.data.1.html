@@ -7442,9 +7442,15 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="collect">collect<a class="anchor-link" href="#collect">¶</a></h3><p>collect raw data from a folder by date<br/>
-folder can be a backup or OnDrive folder; depends on device store</p>
+a folder can be a local backup or online; depends on mobile device store<br/>
+raw data is given by a special mobile app (developed for this project)</p>
 <p>every folder has a list of image files with a corresponding meta file<br/>
-meta files containing sample specific information</p>
+meta files containing sample specific image information about</p>
+<ul>
+<li>camera settings,</li>
+<li>user inputs and</li>
+<li>on site conditions (weather, location)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7514,7 +7520,7 @@ version   2023-08-20 03:14:03.773152
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="request">request<a class="anchor-link" href="#request">¶</a></h3><p>request meta data for every folder by a given sample concentration, reagent and stamp</p>
+<h3 id="request">request<a class="anchor-link" href="#request">¶</a></h3><p>request meta data for every folder by a given sample concentration, reagent and their timestamp</p>
 </div>
 </div>
 </div>
@@ -7574,10 +7580,12 @@ version   2023-08-20 03:14:03.773152
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="copy">copy<a class="anchor-link" href="#copy">¶</a></h3><p>copy files from raw file folders to data folders</p>
-<p>raw file folders data is given by uuid/*.*</p>
-<p>data file folders files then ordered by <b>data\stamp\reagent</b></p>
+<h3 id="copy">copy<a class="anchor-link" href="#copy">¶</a></h3><p>copy files from raw file folders to data folders<br/>
+raw file folders data is given by uuid/*.*<br/>
+data file folders files then ordered by <b>data\stamp\reagent</b></p>
+<blockquote>
 <p>this gives a label for further analysis</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -7612,6 +7620,17 @@ version   2023-08-20 03:14:03.773152
     <span class="n">shutil</span><span class="o">.</span><span class="n">copy2</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="n">ftarget</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>last (manual) update: 2023-08-28</p>
 </div>
 </div>
 </div>

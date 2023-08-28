@@ -162,6 +162,7 @@ class ZMeansUtils:
       #partition_ = partition_/np.sum(partition_)
       rc.append([label_,partition_])
     return rc
+  
 # -----------------------------
 
 def test_():
@@ -171,8 +172,8 @@ def test_():
   
   os.system('cls')
 
-  fpath = os.path.join(os.getcwd(),"data")
-  fname = "SMA_20230207_130757327.jpg"
+  fpath = os.path.join(os.getcwd(),"data","2023-06-13","Nitrit NO2","0.01")
+  fname = "SMA_20230613_135139214.jpg"
 
   I = cv2.imread(os.path.join(fpath,fname))
   I = cv2.cvtColor(I,cv2.COLOR_BGR2RGB)

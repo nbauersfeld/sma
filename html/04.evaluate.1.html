@@ -7611,7 +7611,7 @@ concat the pickles to one data frame</p>
 <p>select a training data set<br/>
 select a test data set</p>
 </blockquote>
-<p>an locate it in the data</p>
+<p>and locate it in the data</p>
 </div>
 </div>
 </div>
@@ -7670,7 +7670,7 @@ select a test data set</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="train/test-set-separation">train/test set separation<a class="anchor-link" href="#train/test-set-separation">¶</a></h3><p>separate the train and test data set into item specific frames</p>
 <blockquote>
-<p>the sample index to compare is given by <code>findex</code>; the first evaluate image of every photo shooting</p>
+<p>the sample index to compare is given by <code>findex</code>; the first evaluated image of every photo shooting</p>
 </blockquote>
 </div>
 </div>
@@ -7754,9 +7754,9 @@ memory usage: 910.0+ bytes
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="OLS-3d-regression">OLS 3d regression<a class="anchor-link" href="#OLS-3d-regression">¶</a></h3><p>ordinary least squares regression in the 3d Lab color space<br/>
+<h3 id="OLS-3d-regression">OLS 3d regression<a class="anchor-link" href="#OLS-3d-regression">¶</a></h3><p>ordinary least squares regression in the 3d <strong>Lab</strong> color space<br/>
 (with the training data set)</p>
-<p>use the <code>ols</code>  from the <code>statsmodels.formula.api</code></p>
+<p>use of the <code>ols</code>  from the <code>statsmodels.formula.api</code> stepwise with</p>
 <blockquote>
 <p>extract the channels per concentration<br/>
 build the z (target) formula<br/>
@@ -7859,23 +7859,23 @@ pred. values
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="summary">summary<a class="anchor-link" href="#summary">¶</a></h3><p>print the summary of the trained OLS model given above</p>
+<h3 id="statistical-summary">statistical summary<a class="anchor-link" href="#statistical-summary">¶</a></h3><p>print the summary of the trained OLS model given above</p>
 <blockquote>
 <p>the summary shows, that the first training is not robust and a little bit unconditioned<br/>
 inspite of that, we use it below to get some results of evaluation at least and for the first shot</p>
 </blockquote>
 <ul>
-<li>z is the dependent variable, because of the 3d regression line of L, a and b; as defined above</li>
-<li>OLS ist the model to minimize the square of errors of the training data and fit to a model</li>
-<li>within the number of observations a regression fit was applied with coefficients "coef" over 3 "Df Model" variables of L, a and b</li>
-<li>the "Intercept" is the constant term of the regression line</li>
-<li>the standard deviation "std err" shows the sampling variability of the parameter (in view of values working space)</li>
-<li>R-squared as the coefficient of determination how much perc. variation of an independent variable can be explained by independent variable; 99% z can be explained by L, a and b; possible maximum of 1 the regression is best</li>
+<li>z is the dependent variable, because of the 3d regression line of <strong>Lab</strong> channels</li>
+<li>OLS ist the model to minimize the square of errors of the training data</li>
+<li>within the number of observations a regression fit was applied with coefficients coef over 3 Df Model variables of L, a and b</li>
+<li>the intercept is the constant term of the regression line</li>
+<li>the standard deviation std err shows the sampling variability of the parameter (in view of values working space)</li>
+<li>R-squared is the coefficient of determination, how much perc. variation of an independent variable can be explained by independent variable; 99% z can be explained by L, a and b; possible maximum of 1 the regression is best</li>
 <li>F-test tells the goodness of fit of a regression; the probability of $F = \frac{R^2/(k-1)}{(1-R^2) / (n-k)} = \frac{0.999/3}{(1-0.999)/7} = 2331$; the F-statistic is greater with $3402$ and the probability near 0; the null hypothesis can be rejected</li>
 <li>Skew and Kurtosis tells about the distribution of data</li>
 <li>Jarque-Bera (JB) is used for checking whether an error has a normal distribution</li>
 <li>Omnibus is a statistical test, that tests for the significance of serveral parameters in a model; means a test to the null hypthesis whether serveral coefficients are equal to to zero at once; can be rejected, becaus of F to conclude that at least one coefficient is not equal to zero</li>
-<li>Durbin-Watson tests to the assumption, that the residuals are independent. The value of $2.9$ show a critical violation, that the standard errors of the coefficents in the regression model are likely to be underestimated: predictor variables are more likely to be deemed statistically significant when there are not - improvement should be applied with more data for the model building.</li>
+<li>Durbin-Watson tests to the assumption, that the residuals are independent. The value of $2.9$ show a critical violation, that the standard errors of the coefficents in the regression model are likely to be underestimated: predictor variables are more likely to be deemed statistically significant when there are not; re-evaluation and even an improvement should be applied with more data for the model building</li>
 </ul>
 </div>
 </div>
@@ -8489,44 +8489,7 @@ for a first try out, the tendence is given and accepted</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="notes">notes<a class="anchor-link" href="#notes">¶</a></h3><p>01.data.1</p>
-<blockquote>
-<p>the raw data folders, containing camera images and meta information are generated by a specific camera app for analysis purposes developed for this project</p>
-</blockquote>
-<p>02.sample.1</p>
-<blockquote>
-<p>every concentration folder of a project and reagent holds more than one image per shot<br/>
-inspite of this, only the first image gets evaluated due to light degradation to the other<br/>
-due to the degradation, mobile camera settings has to be fitted or investigated later on</p>
-</blockquote>
-<blockquote>
-<p>the light-dark vision concept (partitions in color space) depends on an inequal colored/shadowed spot light,<br/>
-that is given by fiber construction and inequal photo lightning<br/>
-shadowed areas will become equal, if the device is better assembled/connected to the camera light bulb and anaylsis aperture</p>
-</blockquote>
-<p>03.merge.1</p>
-<blockquote>
-<p>every merge depends on the projects available<br/>
-pickle files are only storing cluster results of thte first and 2nd image of a photo shooting per reagence and concentration</p>
-</blockquote>
-<p>04.evaluate.1</p>
-<blockquote>
-<p>the prediction for the given sample is not very good (as expected)<br/>
-to improve the model, more data sets should be recorded<br/>
-the tendence of prediction and can be accepted<br/>
-the (bad) prediction quality depends on a model, trained by data of a different working space<br/>
-in conclusion and due to the model, the prediction can be accepted as potential for more training data and further investigations</p>
-</blockquote>
-<p>ordinary</p>
-<blockquote>
-<p>camera app can be improved to control the light and image recording manually; actually this is not secured, due to vendor lockings to the camera and light sensor</p>
-</blockquote>
-<blockquote>
-<p>image quality can be improved by choosing an non reduced raw data format to evaluate; that needs more traffic and store and time to proceed analysis</p>
-</blockquote>
-<blockquote>
-<p>image quality can be changed by the fiber hardware and experimental mount setup</p>
-</blockquote>
+<p>last (manual) update: 2023-08-28</p>
 </div>
 </div>
 </div>
