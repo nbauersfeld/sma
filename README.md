@@ -39,7 +39,7 @@ examples
 - (Wu, 2023) adapt image segments in medical applications, hence we calm down and try to find a smaller method set to find same results
 - (Ng, A., 2012) and (Jan et. al., 1988) describe clustering methods, that w can adapt to reduce the color space of an image in an appropriate manner to informational segments
 - (Zach, 2023) shows how the Durbin-Watson-Test can help to evaluate clustering results of an OLS model; OLS models are used to regress concentration detection models
-- (Seabold, 2010) is used to regress OLS models to achieve a reagence prediction on site
+- (Seabold, 2010) is used to regress OLS models to achieve a reagence prediction on site and evaluate model quality and prediction directly by sample data sets, the use of the library secures numerical accuracy and interpretable results
 - further to get an idea of application an motivation the need is support by (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
 
 ### files
