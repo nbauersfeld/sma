@@ -38,7 +38,8 @@ examples
 - (Hartl, 2010) gives an idea, how to detect image shapes and segments; here in the context of pill recognition in the pharma industry
 - (Wu, 2023) adapt image segments in medical applications, hence we calm down and try to find a smaller method set to find same results
 - (Ng, A., 2012) and (Jan et. al., 1988) describe clustering methods, that w can adapt to reduce the color space of an image in an appropriate manner to informational segments
--
+- (Zach, 2023) shows how the Durbin-Watson-Test can help to evaluate clustering results of an OLS model; OLS models are used to regress concentration detection models
+- (Seabold, 2010) is used to regress OLS models to achieve a reagence prediction on site
 - further to get an idea of application an motivation the need is support by (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
 
 ### files
@@ -121,7 +122,7 @@ examples
 * the inclusion of local water suppliers improve the created results and gives an evaluation by experts
   (but can be time consuming and annoying)
 * a common system description of the system should be applied to make it usable
-* the OLS models fits to coefficients with the assumption that the residuals are independent to each other; statistical test do not support this actually by showing assumption violations (Durbin-Watson-Test, (Zach, 2023))
+* the OLS models fits to coefficients with the assumption that the residuals are independent to each other; statistical test do not support this actually by showing assumption violations (Durbin-Watson-Test)
 
 ### references
 
@@ -131,6 +132,7 @@ examples
 - Skandarajah, A., Reber, C. D., Switz, N. A., & Fletcher, D. A. (2014). Quantitative imaging with a mobile phone microscope.  PloS one,  *9* (5), e96906.
 - Hartl, A. (2010, May). Computer-vision based pharmaceutical pill recognition on mobile phones. In Proceedings of CESCG 2010: 14th Central European Seminar on Computer Graphics (pp. 51-58).
 - Wu, J., Fu, R., Fang, H., Liu, Y., Wang, Z., Xu, Y., ... & Arbel, T. (2023). Medical sam adapter: Adapting segment anything model for medical image segmentation.  arXiv preprint arXiv:2304.12620.
+- Seabold, Skipper, and Josef Perktold (2010). http://conference.scipy.org/proceedings/scipy2010/pdfs/seabold.pdf, Proceedings of the 9th Python in Science Conference.
 - Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
 - IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
 - IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
@@ -143,4 +145,4 @@ examples
 - evaluation, training and test data is given in the data folder
 - python implementation of ZMeans and Utilities are given in the _ZMeans.py script
 
-version 2023-08-28
+version 2023-08-29
