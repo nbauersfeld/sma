@@ -2,7 +2,7 @@
 
 author: Norman Bauersfeld, Von-Garßen-Str. 12, 38640 Goslar, u37724
 
-**preamble**
+### preamble
 
 main topics to begin with a low budget solution evaluation testing water characteristics
 
@@ -24,7 +24,24 @@ achievements
 - quantitative proof of relevant parameter realization and validation with a simple means and with a reduced need for chemicals (reagences)
 - use of a common mobile camera and flash light, in combination with a mount (from the 3D printer and with a functionalized polymer film), should enable qualitative and quantitative detection of the target molecules (NO2, PH4 or NH4)
 
-**files**
+### review
+
+the following examples will show a small review of sources, given by keyword sequences of:
+
+- color metrics of a mobile phone
+- image quality of a mobile phone
+- microsocope applications with a mobile phone
+
+examples
+
+- (Skandarajah, 2014) show, how mobile hardware and vendor software influences image quality and image stability and leads to the necessity to store meta information for every image; it shows an multi-phone holder for a home microscope
+- (Hartl, 2010) gives an idea, how to detect image shapes and segments; here in the context of pill recognition in the pharma industry
+- (Wu, 2023) adapt image segments in medical applications, hence we calm down and try to find a smaller method set to find same results
+- (Ng, A., 2012) and (Jan et. al., 1988) describe clustering methods, that w can adapt to reduce the color space of an image in an appropriate manner to informational segments
+-
+- further to get an idea of application an motivation the need is support by (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
+
+### files
 
 [01.data.1](https://htmlpreview.github.io/?https://github.com/nbauersfeld/sma/blob/main/html/01.data.1.html)
 
@@ -61,9 +78,9 @@ achievements
 - the prediction for the given sample is not very good (as expected) to improve the model, more data sets should be recorded
   the tendence of prediction and can be accepted the (bad) prediction quality depends on a model, trained by data of a different working space in conclusion and due to the model, the prediction can be accepted as potential for more training data and further investigations
 
-**conclusion**
+### conclusion
 
-* ideas of the framework adapted can be found by different sources of publications, e.g. given by references (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
+* ideas of the framework adapted can be found by different sources of publications (see review above)
 * a first prototype of the mobile mount or chassis was build with a specific fiber channel
 * reagences where selected to identify the target molecules
 * an understanding was evolved, how a reagence indicate a concentration of a target and how could it be possible to evaluate them in a color space and how to prepare sample images and where are dependencies of
@@ -81,7 +98,7 @@ achievements
 * interation steps where planed to improve models, app handling and mount construction
 * field tests where applied to test the first models, mount and mobile app handling
 
-**challenges**
+### challenges
 
 * the chassis construction has to be accurate to mount to a mobile of a special type without loss of measurement information
 * the fiber channel begin and end has to be plane enough to avoid shadowing or even fringing
@@ -106,16 +123,19 @@ achievements
 * a common system description of the system should be applied to make it usable
 * the OLS models fits to coefficients with the assumption that the residuals are independent to each other; statistical test do not support this actually by showing assumption violations (Durbin-Watson-Test, (Zach, 2023))
 
-**references**
+### references
 
 - Zach (2023, August 27). Durbin-Watson-Test. http://www.stratology.org/durbin-watson-test
 - Ng, A. (2012). Clustering with the k-means algorithm. Machine Learning, 1-2.
 - Jain, A. K., & Dubes, R. C. (1988). Algorithms for clustering data. Prentice-Hall, Inc.
+- Skandarajah, A., Reber, C. D., Switz, N. A., & Fletcher, D. A. (2014). Quantitative imaging with a mobile phone microscope.  PloS one,  *9* (5), e96906.
+- Hartl, A. (2010, May). Computer-vision based pharmaceutical pill recognition on mobile phones. In Proceedings of CESCG 2010: 14th Central European Seminar on Computer Graphics (pp. 51-58).
+- Wu, J., Fu, R., Fang, H., Liu, Y., Wang, Z., Xu, Y., ... & Arbel, T. (2023). Medical sam adapter: Adapting segment anything model for medical image segmentation.  arXiv preprint arXiv:2304.12620.
 - Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
 - IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
 - IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
 
-**notes**
+### notes
 
 - a first approach description (german) is given by doc/sma_review.pdf, that shows the data understanding, preparation, modelling and evaluation chain; the coresponding quantity/quality report and a schematic view of sample preparation, sample merge and a (small) conclusion
 - html prints of the jupyther notebooks are given in the html folder
