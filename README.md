@@ -2,6 +2,8 @@
 
 author: Norman Bauersfeld, Von-Garßen-Str. 12, 38640 Goslar, u37724
 
+practical project within the context of the seminar DaSc (M. Sc) studies
+
 ### preamble
 
 main topics to begin with a low budget solution evaluation testing water characteristics
