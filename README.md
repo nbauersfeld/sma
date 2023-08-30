@@ -26,21 +26,55 @@ achievements
 
 ### review
 
-the following examples will show a small review of sources, given by keyword sequences of:
+the following examples will show a small review of sources, given by keyword sequences of
 
 - color metrics of a mobile phone
 - image quality of a mobile phone
 - microsocope applications with a mobile phone
 
-examples
+*examples*
 
 - (Skandarajah, 2014) show, how mobile hardware and vendor software influences image quality and image stability and leads to the necessity to store meta information for every image; it shows an multi-phone holder for a home microscope
 - (Hartl, 2010) gives an idea, how to detect image shapes and segments; here in the context of pill recognition in the pharma industry
-- (Wu, 2023) adapt image segments in medical applications, hence we calm down and try to find a smaller method set to find same results
-- (Ng, A., 2012) and (Jan et. al., 1988) describe clustering methods, that w can adapt to reduce the color space of an image in an appropriate manner to informational segments
+- (Wu, 2023) adapt image segments in medical applications, hence it my be usable to try to find a smaller method set to find the same results
+- (Ng, A., 2012) and (Jan et. al., 1988) describe clustering methods, that can be adapted to reduce the color space of an image in an appropriate manner to informational segments of an image (see *ZMeans* and *ZMeansUtils* below)
+- implementational aspects to implement adapted K-means can be given by the python libraries of (Scypi, 2023) and how to port clustering results of an Rgb image into the clustered color space
+- a good entry to K-means clustering may be (Arthur, 2007)
 - (Zach, 2023) shows how the Durbin-Watson-Test can help to evaluate clustering results of an OLS model; OLS models are used to regress concentration detection models
 - (Seabold, 2010) is used to regress OLS models to achieve a reagence prediction on site and evaluate model quality and prediction directly by sample data sets, the use of the library secures numerical accuracy and interpretable results
 - further to get an idea of application an motivation the need is support by (Zeit, 2017), (IISA, 2019) or (IFF, 2019)
+
+### *ZMeans* and *ZMeanUtils*
+
+adaption to the well known K-means unsupervised clustering, e.g. described in (Arthur, 2007) or (Ng, A., 2012)
+
+re-implemented in _ZMeans.py module to make it evaluable, to describe, adaptable and portable for different target operating systems (for on site analysis) and for the characteristical images with 3 clusters needed as
+
+- 1st the black cluster as background
+- 2nd and 3rd the color clusters of the occular color and its shadows (see results in 02.sample)
+
+the implementation includes the steps
+
+- initialisation of K-means
+- uniformly random center initialisation of the center model vectors by the dataset
+- clustering resp. partitioning
+- transforming of the image into the data space
+
+special metric implementation further the common metrics of the euclidean space, that can be used in color spaces, where color vectors have a linearity to each other (e.g. the Lab color space), where Rgb has not
+
+includes a *color* metric that directly clusters Rgb image 3d informational data vectors by a rgb > cixyz > cilab conversion
+
+includes some utilities to
+
+- load Bgr images into the Rgb and Lab color space
+- cluster images with the *ZMeans* implementation
+- mask images with the cluster results, zoom them to the mask and return color bands
+- further to transform colors into an appropriate color space for visualisation
+
+includes scoring by partition computation and tests
+
+
+a place to
 
 ### files
 
@@ -129,6 +163,8 @@ examples
 - Zach (2023, August 27). Durbin-Watson-Test. http://www.stratology.org/durbin-watson-test
 - Ng, A. (2012). Clustering with the k-means algorithm. Machine Learning, 1-2.
 - Jain, A. K., & Dubes, R. C. (1988). Algorithms for clustering data. Prentice-Hall, Inc.
+- SciPy (2023, 08). scipy.cluster.vq.kmeans2. https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.vq.kmeans2.html
+- D. Arthur and S. Vassilvitskii (2007), k-means++: the advantages of careful seeding. Proceedings of the Eighteenth Annual ACM-SIAM Symposium on Discrete Algorithms.
 - Skandarajah, A., Reber, C. D., Switz, N. A., & Fletcher, D. A. (2014). Quantitative imaging with a mobile phone microscope.  PloS one,  *9* (5), e96906.
 - Hartl, A. (2010, May). Computer-vision based pharmaceutical pill recognition on mobile phones. In Proceedings of CESCG 2010: 14th Central European Seminar on Computer Graphics (pp. 51-58).
 - Wu, J., Fu, R., Fang, H., Liu, Y., Wang, Z., Xu, Y., ... & Arbel, T. (2023). Medical sam adapter: Adapting segment anything model for medical image segmentation.  arXiv preprint arXiv:2304.12620.
