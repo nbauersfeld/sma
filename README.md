@@ -48,6 +48,13 @@ the following examples will show a small review of sources, given by keyword seq
 
 adaption to the well known K-means unsupervised clustering, e.g. described in (Arthur, 2007) or (Ng, A., 2012)
 
+regards different color spaces and its conversions (Berriel, 2014)
+
+- bgr; blue-green-red
+- rgb; red-green-blue
+- lab; luminance; a, b as color-opponent dimensions
+- (cixyz and cilab)
+
 re-implemented in _ZMeans.py module to make it evaluable, to describe, adaptable and portable for different target operating systems (for on site analysis) and for the characteristical images with 3 clusters needed as
 
 - 1st the black cluster as background
@@ -60,13 +67,13 @@ the implementation includes the steps
 - clustering resp. partitioning
 - transforming of the image into the data space
 
-special metric implementation further the common metrics of the euclidean space, that can be used in color spaces, where color vectors have a linearity to each other (e.g. the Lab color space), where Rgb has not
+special metric implementation further the common metrics of the euclidean space, that can be used in color spaces, where color vectors have a linearity to each other (e.g. the lab color space), where rgb has not
 
-includes a *color* metric that directly clusters Rgb image 3d informational data vectors by a rgb > cixyz > cilab conversion
+includes a *color* metric that directly clusters rgb image 3d informational data vectors by a rgb > cixyz > cilab conversion
 
 includes some utilities to
 
-- load Bgr images into the Rgb and Lab color space
+- load bgr images into the rgb and lab color space
 - cluster images with the *ZMeans* implementation
 - mask images with the cluster results, zoom them to the mask and return color bands
 - further to transform colors into an appropriate color space for visualisation
@@ -166,6 +173,7 @@ a place to be with further investigations
 ### references
 
 - Arthur, D. & Vassilvitskii, S. (2007), k-means++: the advantages of careful seeding. Proceedings of the Eighteenth Annual ACM-SIAM Symposium on Discrete Algorithms.
+- Berriel, R. (2014). OpenCV: Color-spaces and splitting channels. https://rodrigoberriel.com/2014/11/opencv-color-spaces-splitting-channels
 - Hartl, A. (2010, May). Computer-vision based pharmaceutical pill recognition on mobile phones. In Proceedings of CESCG 2010: 14th Central European Seminar on Computer Graphics (pp. 51-58).
 - Jain, A. K., & Dubes, R. C. (1988). Algorithms for clustering data. Prentice-Hall, Inc.
 - Ng, A. (2012). Clustering with the k-means algorithm. Machine Learning, (pp. 1-2).
