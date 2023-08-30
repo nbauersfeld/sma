@@ -175,7 +175,7 @@ a place to be with further investigations
 - Wu, J., Fu, R., Fang, H., Liu, Y., Wang, Z., Xu, Y., ... & Arbel, T. (2023). Medical sam adapter: Adapting segment anything model for medical image segmentation.  arXiv preprint arXiv:2304.12620.
 - Zach (2023, August 27). Durbin-Watson-Test. http://www.stratology.org/durbin-watson-test
 
-links of possible applictions in media (contribution of Prof. Schenkendorf, hs-harz.de)
+*links of possible applictions in media (contribution of Prof. Schenkendorf, hs-harz.de)*
 
 - IFF (2019, 07). Presseinformation. https://www.iff.fraunhofer.de/content/dam/iff/de/dokumente/pressemappe/pm20190702-spektralanalysen-mit-smartphone-iq-innovationspreis-mitteldeutschland-fuer-scantechnologie-des-fraunhofer-iff.pdf
 - IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
