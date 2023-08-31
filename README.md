@@ -1,16 +1,10 @@
 # practical project
 
-*author*
+*author*: Norman Bauersfeld, Von-Garßen-Str. 12, 38640 Goslar, u37724@hs-harz.de
 
-Norman Bauersfeld, Von-Garßen-Str. 12, 38640 Goslar, u37724@hs-harz.de
+*about*: practical project within the context of the seminar DaSc (M. Sc) studies
 
-*about*
-
-practical project within the context of the seminar DaSc (M. Sc) studies
-
-*topics*
-
-water cycle security, mobile target molecule detection, image preprocessing, cluster analysis, regression evaluation
+*topics*: water cycle security, mobile target molecule detection, image preprocessing, cluster analysis, regression evaluation
 
 ### preamble
 
