@@ -185,6 +185,11 @@ a place to be with further investigations
 - IISA (2019, 07). Spektralanalysen mit dem Smartphone. https://www.investieren-in-sachsen-anhalt.de/presse/nachrichten-iisa/2019/07/spektralanalysen-mit-dem-smartphone
 - Zeit (2017, 02). Dies App macht das Smartphone zum Spektrometer. https://www.zeit.de/digital/mobil/2017-02/hawkspex-mobile-app-fraunhofer-institut-gemuese-pestizide-erkennung
 
+*links of members in this project strongly included*
+
+- Pdv (2023, 08). pdv-software GmbH. https://www.pdv-software.de. Goslar.
+- Hhi (2023, 08). Heinrich Hertz Institut | Faseroptische Sensorsysteme. https://www.hhi.fraunhofer.de. Goslar.
+
 ### notes
 
 - a first approach description (german) is given by doc/sma_review.pdf, that shows the data understanding, preparation, modelling and evaluation chain; the coresponding quantity/quality report and a schematic view of sample preparation, sample merge and a (small) conclusion
@@ -196,5 +201,12 @@ a place to be with further investigations
 ### statement of orginality
 
 I hereby confirm that I have written the accompanying practical project by myself, without contributions from any sources other than those cited in the text and acknowledgements. This applies also to all graphics, drawings, maps and images included in the thesis.
+
+### Acknowledgement
+
+to make this project possible
+
+- to (Pdv, 2023) for mobile device and partitially mobile app programming
+- to (Hhi, 2023) for mobile mount and fiber sensor iterations
 
 version 2023-08-31
