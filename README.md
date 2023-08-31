@@ -202,7 +202,7 @@ a place to be with further investigations
 
 I hereby confirm that I have written the accompanying practical project by myself, without contributions from any sources other than those cited in the text and acknowledgements. This applies also to all graphics, drawings, maps and images included in the thesis.
 
-### Acknowledgement
+### acknowledgement
 
 to make this project possible
 
